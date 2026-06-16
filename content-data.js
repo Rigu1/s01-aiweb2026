@@ -11,15 +11,15 @@ window.projectPage = {
     },
     {
       type: "paired",
-      title: "문제와 사용자",
+      title: "해결하고자하는 것",
       panels: [
         {
           label: "문제",
-          text: "음악을 들을 때 특정 곡이 어떤 장르적 특징을 갖고 있는지 객관적으로 파악하기 어렵습니다. 사용자는 직접 장르를 검색하거나 플레이리스트를 훑어야 해서 비슷한 분위기의 곡을 찾는 데 시간이 걸립니다. Café de Music은 음원의 일부 구간을 분석해 장르 비율을 보여주고, 그 결과를 바탕으로 추천 곡을 제안합니다."
+          text: "음악을 들을 때 특정 곡이 어떤 장르적 특징을 갖고 있는지 객관적으로 파악하기 어렵습니다. 특히 요즘의 음악은 여러 장르가 혼합되어 있어 특정 장르를 정확히 파악하기 어렵습니다. Café de Music은 음원에서 사용자가 원하는 일부 구간을 분석해 장르 비율을 보여주고, 그 결과를 바탕으로 추천 곡을 제안합니다."
         },
         {
           label: "사용자",
-          text: "새로운 음악을 자주 찾는 일반 사용자와 자신의 취향을 더 구체적으로 알고 싶은 음악 감상자를 대상으로 합니다. 특히 \"이 곡과 비슷한 느낌의 음악\"을 빠르게 찾고 싶은 사람에게 적합합니다."
+          text: "새로운 음악을 자주 찾는 일반 사용자와 자신의 취향을 더 구체적으로 알고 싶은 음악 감상자를 대상으로 합니다. 특히 \"좋아하는 노래의 특정 부분과 비슷한 곡\"을 빠르게 찾고 싶은 사람에게 적합합니다."
         }
       ]
     },
@@ -48,14 +48,21 @@ window.projectPage = {
       listType: "stack",
       items: [
         {
-          group: "프레임워크",
+          group: "프로그래밍 언어",
           entries: [
             { label: "HTML", meta: "UI Markup" },
-            { label: "Vanilla JS", meta: "Client Logic" },
             { label: "CSS", meta: "Cafe Menu Board UI" },
-            { label: "Express.js", meta: "Node Server" },
+            { label: "Vanilla JS", meta: "Client Logic" },
             { label: "Python 3", meta: "Audio Processing" },
-            { label: "multer / librosa", meta: "Upload & Analysis" }
+
+          ]
+        },
+        {
+          group: "프레임워크 및 라이브러리",
+          entries: [
+            { label: "Express.js", meta: "Node Server" },
+            { label: "multer", meta: "Upload" },
+            { label: "librosa", meta: "Analysis" }
           ]
         },
         {
